@@ -35,22 +35,22 @@
 
 <script>
 export default {
-  name: "OompaDetail",
+  name: 'OompaDetail',
   props: {
     oompa: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
-  data() {
+  data () {
     return {};
   },
   computed: {
-    fullName() {
-      return this.oompa.first_name + " " + this.oompa.last_name;
-    },
+    fullName () {
+      return this.oompa.first_name + ' ' + this.oompa.last_name;
+    }
   },
-  methods: {},
+  methods: {}
 };
 </script>
 
