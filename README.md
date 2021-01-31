@@ -9,8 +9,12 @@ The project requires [Node.js](https://nodejs.org/) and [NPM](https://www.npmjs.
 Clone the repository:
 
 ```shell
-git clone https://github.com/christianjtr/oompa-loompa-crew.git
+git clone https://github.com/christianjtr/oompa-list-crew.git
 ```
+
+Click on the following link (Github page project):
+
+https://christianjtr.github.io/oompa-list-crew
 
 ### Build Setup
 
@@ -35,3 +39,11 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+### Comments
+
+Basic list of elements (infinite scroller) with a search input filter and a detail view. The results are being stored in the localStorage.
+
+### Technologies
+
+Vue v2, Vuex, Bulma, Sass, LocalStorage.
