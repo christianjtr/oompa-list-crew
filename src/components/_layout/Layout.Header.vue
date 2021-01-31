@@ -1,7 +1,7 @@
 <template>
   <div class="level header is-flex">
     <div class="level-item">
-      <router-link :to="'/oompas'" title="Home!" exact>
+      <router-link to="/" title="Home!" exact>
         <figure class="image is-48x48">
           <img :src="getLogoImage" alt="Image Logo" class="image-logo" />
         </figure>
@@ -27,31 +27,31 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex';
-import { focus } from 'vue-focus';
+import { mapState, mapActions } from "vuex";
+import { focus } from "vue-focus";
 
 export default {
-  name: 'LayoutHeader',
+  name: "LayoutHeader",
   directives: {
-    focus
+    focus,
   },
   computed: {
-    ...mapState(['filter']),
-    getLogoImage () {
-      return require('@/assets/images/logo-umpa-loompa.png'); // eslint-disable-line global-require
+    ...mapState(["filter"]),
+    getLogoImage() {
+      return require("@/assets/images/logo-umpa-loompa.png"); // eslint-disable-line global-require
     },
     searchFilter: {
-      get () {
+      get() {
         return this.filter;
       },
-      set (value) {
+      set(value) {
         this.setOompaFilter({ filter: value });
-      }
-    }
+      },
+    },
   },
   methods: {
-    ...mapActions(['setOompaFilter'])
-  }
+    ...mapActions(["setOompaFilter"]),
+  },
 };
 </script>
 

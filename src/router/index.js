@@ -9,6 +9,11 @@ export default new Router({
   mode: 'history',
   routes: [
     {
+      path: '/',
+      name: 'main',
+      component: Main
+    },
+    {
       path: '/oompas',
       name: 'main',
       component: Main

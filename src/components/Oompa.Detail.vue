@@ -3,11 +3,7 @@
     <article class="columns is-centered">
       <template v-if="oompa.first_name">
         <div class="column is-2 has-text-left">
-          <router-link
-            to="/oompas"
-            title="Back to crew list"
-            class="title is-5 info"
-          >
+          <router-link to="/" title="Back to crew list" class="title is-5 info">
             Back to crew list
           </router-link>
         </div>
@@ -39,22 +35,22 @@
 
 <script>
 export default {
-  name: 'OompaDetail',
+  name: "OompaDetail",
   props: {
     oompa: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
-  data () {
+  data() {
     return {};
   },
   computed: {
-    fullName () {
-      return this.oompa.first_name + ' ' + this.oompa.last_name;
-    }
+    fullName() {
+      return this.oompa.first_name + " " + this.oompa.last_name;
+    },
   },
-  methods: {}
+  methods: {},
 };
 </script>
 
