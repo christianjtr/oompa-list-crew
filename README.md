@@ -12,6 +12,10 @@ Clone the repository:
 git clone https://github.com/christianjtr/oompa-list-crew.git
 ```
 
+### Demo
+
+![](oompa.gif)
+
 Click on the following link (Github page project):
 
 https://christianjtr.github.io/oompa-list-crew
