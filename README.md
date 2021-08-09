@@ -2,6 +2,8 @@
 
 It`s just another test...
 
+Basic assessment developed in order to display a list of items with an infinite scroll, search input tab, and a detailed page. (VueJS v2, Bulma).
+
 
 > A Vue.js project
 
